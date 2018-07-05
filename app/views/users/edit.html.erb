@@ -1,0 +1,6 @@
+    <%= form_for current_user do |f| %>
+      <h2>登録情報</h2>
+          <%= f.text_field :family_name, placeholder: "fammily name", class: "form-control" %>
+          <%= f.text_field :first_name, placeholder: "first name", class: "form-control" %>
+        <%= f.submit "submit", class: "btn btn-primary withripple" %>
+    <% end %>
