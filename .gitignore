@@ -12,5 +12,4 @@
 !/log/.keep
 /tmp
 
-### マージしたあと必ず以下のコメントアウトを外してください！
 /config/settings.yml
