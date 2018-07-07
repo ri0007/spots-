@@ -1,0 +1,24 @@
+# .ymlファイルについての説明
+# https://qiita.com/Yama-to/items/587544993fb62610528a
+
+# 共通の設定
+defaults: &defaults
+  MAIL_USER: ko**********@*****.com # 一応伏せ字にしてあるので編集してください
+  MAIL_PASSWORD: please_here_new_password # ここに新しいアプリパスワードを記載してください
+
+# 開発環境で使う環境変数(起動時に指定がない限りはこれになります)
+development:
+  <<: *defaults # デフォルト設定の読み込み
+  # 別途必要があればここに追記します
+
+# テスト環境で使う環境変数
+test:
+  <<: *defaults
+  # 別途必要があればここに追記します
+
+# 本番環境で使う環境変数
+production:
+  <<: *defaults
+  # MAIL_USER: hoge@hoge.com # デフォルト設定の上書きもできます
+  # 別途必要があればここに追記します
+
