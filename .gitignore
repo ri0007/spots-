@@ -13,4 +13,4 @@
 /tmp
 
 ### マージしたあと必ず以下のコメントアウトを外してください！
-# /app/config/settings.yml
+/config/settings.yml
