@@ -22,5 +22,8 @@ module Spots
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # 明示的に環境変数を指す変数ENVにapp/config/settings.ymlを読み込ませています
+    ENV.update YAML.load_file('config/settings.yml')[Rails.env] rescue {}
   end
 end
